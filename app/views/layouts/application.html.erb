@@ -7,10 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<h1>Homebook</h1>
 
-<%= yield %>
-<em>Footer</em>
+	<div class='navbar navbar-inverse'>
+		<div class='container'>	
+			<ul class='nav nav-pills'>
+				<li><a class='navbar-brand' href='#'> HomeBook</a></li>
+				<li><%= link_to 'All Statuses', statuses_path%></li>
+
+			</ul>
+		</div>
+	</div>
+	<div class='container'>
+		<%= yield %>
+	</div>
+
 
 </body>
 </html>
